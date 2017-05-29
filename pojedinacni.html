@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+
+<!-- 	<ui-gmap-google-map ng-show="sho" center='map.center' zoom='map.zoom'>
+	<ui-gmap-marker coords='{ latitude: 44.804261, longitude: 20.45988179999995 }' idkey="marker.id">
+        </ui-gmap-marker>
+	</ui-gmap-google-map> -->
+	<div class="col-xs-12" id="map"></div>
+	
+						<div class="col-sm-12 list-box" ng-repeat="tim in tim" >
+				<p><span>Sport:</span> {{tim.sport}}</p>
+				<p><span>Termin:</span> {{tim.datum}} u {{tim.vreme}}h</p>
+				<p><span>Grad:</span> {{tim.grad}}</p>
+				<p><span>Gde:</span> {{tim.adresa}}</p>
+				<p><span>Igra se u:</span> {{tim.objekat}}</p>
+				<p><span>Potreban broj igraca:</span> {{tim.broj_igraca}}</p>
+				<p><span>Starost igraca:</span> izmedju {{tim.starost}} godina</p>
+				<p><span>Cena po igracu:</span> {{tim.cena}} dinara</p>
+				<p><span>Napomena:</span> {{tim.napomena}}</p>
+				<p><span>Kontakt:</p>
+				<p>{{tim.telefon}}</p>
+				<p>{{tim.email}}</p>
+				
+			</div>
+	</div>	
+</div>

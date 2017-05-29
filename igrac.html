@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+
+<!-- 	<ui-gmap-google-map ng-show="sho" center='map.center' zoom='map.zoom'>
+	<ui-gmap-marker coords='{ latitude: 44.804261, longitude: 20.45988179999995 }' idkey="marker.id">
+        </ui-gmap-marker>
+	</ui-gmap-google-map> -->
+	
+			<div class="col-sm-12 list-box" ng-repeat="igrac in igrac | filter:gradi | filter:sporti">
+				<p><span>Ime:</span> {{igrac.ime}}</p>
+				<p><span>Sport:</span> {{igrac.sport}}</p>
+				<p><span>Grad:</span> {{igrac.grad}}</p>
+				<p><span>Starost igraca:</span>{{igrac.starost}} godine</p>
+				<p><span>Napomena:</span> {{igrac.napomena}}</p>
+				<p><span>Kontakt:</p>
+				<p>{{igrac.telefon}}</p>
+				<p>{{igrac.email}}</p>
+			</div>
+	</div>	
+</div>

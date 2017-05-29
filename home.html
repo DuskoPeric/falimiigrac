@@ -1,0 +1,83 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="col-sm-12">
+				<h2 class="section-title">Timu fali igrac</h2>
+				<div class="row">
+					<div class="col-sm-4">
+						<input type="text" class="form-control" data-provide="datepicker" ng-model="datum">
+					</div>
+					<div class="col-sm-4">
+						<select ng-model="sport">
+							<option value="">Sport</option>
+							<option value="fudbal">Fudbal</option>
+							<option value="kosarka">Kosarka</option>
+							<option value="tenis">Tenis</option>
+						</select>
+					</div>
+					<div class="col-sm-4">
+						<select ng-model="grad">
+							<option value="">Grad</option>
+							<option value="Beograd">Beograd</option>
+							<option value="Novi Sad">Novi Sad</option>
+							<option value="Nis">Nis</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 list-box" ng-repeat="tim in timovi | filter:datum | filter:grad | filter:{sport:sport} | orderBy:'-datum_unosa'" ng-show="datumFilter(tim.datum)">
+				<p><span>Sport:</span> {{tim.sport}}</p>
+				<p><span>Termin:</span> {{tim.datum}} u {{tim.vreme}}h</p>
+				<p><span>Grad:</span> {{tim.grad}}</p>
+				<p><span>Gde:</span> {{tim.adresa}}</p>
+				<p><span>Igra se u:</span> {{tim.objekat}}</p>
+				<p><span>Potreban broj igraca:</span> {{tim.broj_igraca}}</p>
+				<p><span>Starost igraca:</span> izmedju {{tim.starost}} godina</p>
+				<p><span>Cena po igracu:</span> {{tim.cena}} dinara</p>
+				<p><span>Napomena:</span> {{tim.napomena}}</p>
+				<p><span>Kontakt:</p>
+				<p>{{tim.telefon}}</p>
+				<p>{{tim.email}}</p>
+				<a href="#pojedinacni/{{tim.tim_id}}"><button>Detaljnije</button></a>
+				
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="col-sm-12">
+				<h2 class="section-title">Igracu fali tim</h2>
+				<div class="row">
+					<div class="col-sm-4">
+						<select ng-model="sporti">
+							<option value="">Sport</option>
+							<option value="fudbal">Fudbal</option>
+							<option value="kosarka">Kosarka</option>
+							<option value="tenis">Tenis</option>
+						</select>
+					</div>
+					<div class="col-sm-4">
+						<select ng-model="gradi">
+							<option value="">Grad</option>
+							<option value="Beograd">Beograd</option>
+							<option value="Novi Sad">Novi Sad</option>
+							<option value="Nis">Nis</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 list-box" ng-repeat="igrac in igraci | filter:gradi | filter:sporti">
+				<p><span>Ime:</span> {{igrac.ime}}</p>
+				<p><span>Sport:</span> {{igrac.sport}}</p>
+				<p><span>Grad:</span> {{igrac.grad}}</p>
+				<p><span>Starost igraca:</span>{{igrac.starost}} godine</p>
+				<p><span>Napomena:</span> {{igrac.napomena}}</p>
+				<p><span>Kontakt:</p>
+				<p>{{igrac.telefon}}</p>
+				<p>{{igrac.email}}</p>
+				<a href="#igrac/{{igrac.igrac_id}}"><button>Detaljnije</button></a>
+			</div>
+		</div>	
+	</div>	
+	<button ng-click="redirektuj()">redirektuj</button>
+	<button ng-click="promjeni()">izmjeni</button>
+
+</div>

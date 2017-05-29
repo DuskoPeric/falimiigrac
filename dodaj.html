@@ -1,0 +1,45 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+				<h2>Dodaj tim</h2>
+				<div class="row">
+					<div class="col-sm-12">
+						<form ng-submit="dodajtim()" >
+							
+							<select id="" ng-model="datas.sport">
+								<option value="Fudbal">Fudbal</option>
+								<option value="Kosarka">Kosarka</option>
+								<option value="Tenis">Tenis</option>
+							</select>
+							<input type="text" class="form-control" data-provide="datepicker" ng-model="datas.datum" placeholder="Datum">
+							<input id="vreme" ng-model="datas.vreme" type="text" placeholder="Vreme" / >
+							<select id="" ng-model="datas.grad" >
+								<option value="Beograd">Beograd</option>
+								<option value="Novi Sad">Novi Sad</option>
+								<option value="Nis">Nis</option>
+							</select>
+							<input ng-model="datas.adresa" type="text" placeholder="Adresa"/>
+							<select id="" ng-model="datas.objekat">
+								<option value="Sala">Sala</option>
+								<option value="Balon">Balon</option>
+								<option value="Na otvorenom terenu">Na otvorenom terenu</option>
+							</select>
+							<input ng-model="datas.broj_igraca" type="number" min=1 max=20 placeholder="Broj igraca"/>
+							<select id="" ng-model="datas.starost">
+								<option value="10-20">10-20</option>
+								<option value="20-30">20-30</option>
+								<option value="30-40">30-40</option>
+								<option value="40-50">40-50</option>
+							</select>
+							<input ng-model="datas.cena" type="text" placeholder="Cena" />
+							<input ng-model="datas.telefon" type="text" placeholder="Telefon" />
+							<input ng-model="datas.email" type="email" placeholder="Email" />
+							<textarea ng-model="datas.napomena" placeholder="Napomena"></textarea>
+							<button type="submit">Dodaj</button>
+						</form>
+					</div>
+
+				</div>
+		</div>
+	</div>	
+</div>

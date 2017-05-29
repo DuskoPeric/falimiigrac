@@ -1,0 +1,56 @@
+{
+    "timovi": [
+		{
+            "datum_unosa": "2017-04-22",
+			"sport": "kosarka",
+			"datum": "04/22/2017",
+			"vreme":"12:30",
+			"grad": "Beograd",
+			"adresa": "Bircaninova 4",
+			"objekat": "Balonu",
+			"broj_igraca": 2,
+			"starost": "20-30",
+			"cena":230,
+			"napomena": "Igramo laksi fudbal, ne jurimo mnogo pa mogu i debeljani da se jave (ne sluzimo sendvice)",
+			"telefon": "060/1234567",
+			"email": "test@test.com"
+        },
+		{
+            "datum_unosa": "2017-04-23",
+			"sport": "fudbal",
+			"datum": "04/23/2017",
+			"vreme":"13:30",
+			"grad": "Novi Sad",
+			"adresa": "Nemanjina 8",
+			"objekat": "Sali",
+			"broj_igraca": 1,
+			"starost": "30-40",
+			"cena":430,
+			"napomena": "Super ekipa svi su dobrodosli",
+			"telefon": "060/1234567",
+			"email": "test@test.com"
+        }		
+    ],
+	"igraci" :[
+		{
+            "datum_unosa": "04/04/2017",
+			"ime":"Mujo",
+			"sport": "fudbal",
+			"grad": "Novi Sad",
+			"starost": "30-40",
+			"napomena": "Igram nako",
+			"telefon": "060/1234567",
+			"email": "test@test.com"
+        },
+		{
+            "datum_unosa": "09.10.2017",
+			"ime":"Suljo",
+			"sport": "fudbal",
+			"grad": "Beograd",
+			"starost": "20-30",
+			"napomena": "Igram vrhunski",
+			"telefon": "060/1234567",
+			"email": "test@test.com"
+        }
+	]
+}
